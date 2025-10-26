@@ -1,7 +1,12 @@
+"use client";
+
+import { useGetAccounts } from "@/features/accounts/api/use-get-accounts";
+
 export default function Home() {
+
   return (
     <div>
-      <h1>Dashboard Page</h1>
+      Home page
     </div>
   );
 }
