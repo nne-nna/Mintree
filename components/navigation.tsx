@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useMedia } from "react-use";
 
 import NavButton from "./nav-button";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 
@@ -57,6 +57,7 @@ const Navigation = () => {
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="px-2">
+          <SheetTitle className="sr-only">Navigation Menu</SheetTitle> {/* Add this line */}
           <nav className="flex flex-col gap-y-2 pt-6">
             {routes.map((route) => (
               <Button
