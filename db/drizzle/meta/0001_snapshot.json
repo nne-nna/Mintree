@@ -1,11 +1,48 @@
 {
-  "id": "ba4b485d-21a7-4398-80fd-78dfe9a396ee",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "ae9e20ca-3339-462e-831b-50ea135b82cb",
+  "prevId": "54dc3c5d-fd74-49e2-8e44-215985f1fd35",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
     "public.accounts": {
       "name": "accounts",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "plaid_id": {
+          "name": "plaid_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.categories": {
+      "name": "categories",
       "schema": "",
       "columns": {
         "id": {
