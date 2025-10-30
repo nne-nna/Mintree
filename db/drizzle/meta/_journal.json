@@ -15,6 +15,13 @@
       "when": 1761615953694,
       "tag": "0001_wide_morbius",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1761637333308,
+      "tag": "0002_strange_ben_grimm",
+      "breakpoints": true
     }
   ]
 }
